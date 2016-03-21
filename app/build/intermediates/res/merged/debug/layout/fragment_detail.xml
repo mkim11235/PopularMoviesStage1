@@ -1,0 +1,59 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+        <TextView
+            android:id="@+id/detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#88B2FF"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:textSize="@dimen/detail_title_font_size" />
+
+        <ImageView
+            android:id="@+id/detail_poster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/detail_title"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:id="@+id/detail_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detail_title"
+            android:layout_toRightOf="@id/detail_poster"
+            android:text="@string/detail_rating_label"
+            android:textSize="@dimen/detail_other_font_size" />
+
+        <TextView
+            android:id="@+id/detail_release_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detail_rating"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/detail_poster"
+            android:text="@string/detail_release_label"
+            android:textSize="@dimen/detail_other_font_size" />
+
+        <TextView
+            android:id="@+id/detail_plot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/detail_poster"
+            android:layout_margin="10dp"
+            android:text="@string/detail_plot_label"
+            android:textSize="@dimen/detail_other_font_size" />
+
+    </RelativeLayout>
+</ScrollView>
+<!-- From: file:/C:/Users/mkim123/AndroidStudioProjects/PopularMovies/app/src/main/res/layout/fragment_detail.xml -->
